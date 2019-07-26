@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OverlayDemo</string>
+    <string name="help_menu">Open menu</string>
+    <string name="help_setting">Go to setting</string>
+    <string name="button_back">Back</string>
+    <string name="button_next">Next</string>
+    <string name="button_start">Start!</string>
+    <string name="text_welcome">Welcome to overlay demo</string>
+</resources>
