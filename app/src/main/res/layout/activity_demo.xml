@@ -21,44 +21,92 @@
         app:title="@string/app_name"
         app:titleTextColor="#40FFFFFF" />
 
-    <ImageView
-        android:id="@+id/o_ic_menu"
+    <TextView
+        android:id="@+id/helpText1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/help_text_1"
+        android:textColor="@color/colorTitleToolbar"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/o_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/o_toolbar">
+
+        <include
+            layout="@layout/overlay_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/helpText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorTitleToolbar"
-        android:contentDescription="@string/help_menu"
-        android:src="@drawable/ic_menu_24px"
-        android:tint="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/o_toolbar" />
-
-    <ImageView
-        android:id="@+id/o_ic_setting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:contentDescription="@string/help_setting"
-        android:src="@drawable/ic_settings_20px"
-        android:tint="#000000"
+        android:layout_marginBottom="8dp"
+        android:text="@string/help_text_2"
+        android:textColor="@color/colorTitleToolbar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/categories"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/o_toolbar" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categories">
+
+        <include
+            layout="@layout/card_info_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/o_helpText"
-        android:layout_width="wrap_content"
+        android:id="@+id/helpText3"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:gravity="center"
-        android:text="@string/help_menu"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/help_text_3"
         android:textColor="@color/colorTitleToolbar"
-        android:textSize="22sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/feed"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/o_toolbar" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button_back"

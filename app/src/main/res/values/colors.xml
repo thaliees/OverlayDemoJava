@@ -6,4 +6,6 @@
     <color name="colorTitleToolbar">#FFFFFF</color>
     <color name="colorOverlay">#BF000000</color>
     <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPrimary30">#4D008577</color>
 </resources>

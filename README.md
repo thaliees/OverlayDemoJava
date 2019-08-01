@@ -8,3 +8,6 @@ Simple overlay using RelativeLayout and TextView (help text) in the center. Butt
 # Focused view
 Simple overlay, using a previous activity before launching the main screen.
 The view is focused (actions for the user) and help text is displayed.
+
+# Automatic tip
+Example with [ButtonFilterJava Project] (https://github.com/thaliees/ButtonFilterJava)

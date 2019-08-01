@@ -20,44 +20,30 @@
         app:title="@string/app_name"
         app:titleTextColor="@color/colorTitleToolbar" />
 
-    <ImageView
-        android:id="@+id/ic_menu"
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_listTags"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/help_menu"
-        android:src="@drawable/ic_menu_24px"
-        android:tint="#000000"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <ImageView
-        android:id="@+id/ic_setting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:contentDescription="@string/help_setting"
-        android:src="@drawable/ic_settings_20px"
-        android:tint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-    <TextView
-        android:id="@+id/textMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:gravity="center"
-        android:text="@string/text_welcome"
-        android:textColor="@android:color/black"
-        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_listTags" />
 
 </android.support.constraint.ConstraintLayout>

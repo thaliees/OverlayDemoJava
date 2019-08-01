@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">OverlayDemo</string>
-    <string name="help_menu">Open menu</string>
-    <string name="help_setting">Go to setting</string>
+    <string name="help_text_1">Welcome!</string>
+    <string name="help_text_2">You can filters for categories our info</string>
     <string name="button_back">Back</string>
     <string name="button_next">Next</string>
     <string name="button_start">Start!</string>
     <string name="text_welcome">Welcome to overlay demo</string>
+    <string name="label_filters">Filters</string>
+    <string name="help_text_3">Our feed</string>
 </resources>
